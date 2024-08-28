@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  contenedor_vivelibre:
+    image: skeet15/auth-vivelibre
+    restart: always
+    hostname: vivelibre
+    ports:
+      - "8080:8080"
+
+  contenedor_pruebadocker:
+    image: docker/client
+    restart: always
+    ports:
+      - "8081:8081"
+    depends_on:
+      - contenedor_vivelibre
