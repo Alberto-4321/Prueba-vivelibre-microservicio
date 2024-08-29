@@ -25,3 +25,4 @@ Cuerpo de la respuesta:
     "auth-vivelibre-token": "string",  
     "date": "February 21, 2018"  
     }
+Para ejecutarlo usar el docker-compose.yml que esta en la raiz del proyecto.
